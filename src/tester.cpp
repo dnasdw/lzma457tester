@@ -1,3 +1,4 @@
+#include <CPP/Common/MyWindows.h>
 #include <CPP/Common/MyInitGuid.h>
 #include <CPP/7zip/Common/StreamUtils.h>
 #include <CPP/7zip/Compress/LZMA/LZMADecoder.h>
@@ -217,7 +218,7 @@ int compressFile(const UString& a_sInputFileName, const UString& a_sOutputFileNa
 	properties[5].ulVal = (UInt32)numFastBytes;
 
 	properties[6].vt = VT_BSTR;
-	properties[6].bstrVal = L"BT4";
+	properties[6].bstrVal = (BSTR)L"BT4";
 
 	properties[7].vt = VT_BOOL;
 	properties[7].boolVal = eos ? VARIANT_TRUE : VARIANT_FALSE;
