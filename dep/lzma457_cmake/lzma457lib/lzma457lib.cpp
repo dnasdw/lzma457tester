@@ -42,7 +42,7 @@ void CLzma457::SProperties::Normalize()
 	}
 	if (MC < 0)
 	{
-		MC = -1;
+		MC = -1;	// 0
 	}
 	if (LC < 0 || LC > 8)
 	{
