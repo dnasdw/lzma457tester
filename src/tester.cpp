@@ -25,7 +25,8 @@ int uncompressFile(const UString& a_sInputFileName, const UString& a_sOutputFile
 	{
 		return 1;
 	}
-	sCompressedData.swap(string(""));
+	sCompressedData.clear();
+	ShrinkToFit(sCompressedData);
 
 	fp = UFopen(a_sOutputFileName, USTR("wb"), false);
 	if (fp == nullptr)
@@ -67,7 +68,8 @@ int compressFile(const UString& a_sInputFileName, const UString& a_sOutputFileNa
 	{
 		return 1;
 	}
-	sUncompressedData.swap(string(""));
+	sUncompressedData.clear();
+	ShrinkToFit(sUncompressedData);
 
 	fp = UFopen(a_sOutputFileName, USTR("wb"), false);
 	if (fp == nullptr)
