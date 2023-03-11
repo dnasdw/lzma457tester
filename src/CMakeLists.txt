@@ -10,7 +10,7 @@ AUTO_FILES("${ROOT_SOURCE_DIR}/dep/lzma457/CPP/7zip/Compress/RangeCoder" "src" "
 AUTO_FILES("${ROOT_SOURCE_DIR}/dep/lzma457/CPP/Common" "src" "/(CRC|Defs|MyCom|MyGuidDef|MyException|MyInitGuid|MyUnknown|MyWindows|NewHandler|StdAfx|Types)\\.(cpp|h)$")
 include_directories(${DEP_INCLUDE_DIR})
 link_directories(${DEP_LIBRARY_DIR})
-add_definitions(-DSDW_MAIN)
+add_definitions(-DSDW_MAIN -Wno-logical-op-parentheses)
 ADD_EXE(tester "${src}")
 if(CYGWIN)
   target_link_libraries(tester iconv)
