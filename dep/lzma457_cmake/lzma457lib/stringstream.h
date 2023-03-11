@@ -2,7 +2,6 @@
 #define LZMA457LIB_STRINGSTREAM_H_
 
 #include "../lzma457/CPP/Common/MyWindows.h"
-#include "../lzma457/CPP/Common/MyInitGuid.h"
 
 #include "../lzma457/CPP/7zip/IStream.h"
 #include "../lzma457/CPP/Common/MyCom.h"
