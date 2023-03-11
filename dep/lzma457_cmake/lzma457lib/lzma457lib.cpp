@@ -239,7 +239,7 @@ bool CLzma457::Uncompress(const std::string& a_sCompressedData, std::string& a_s
 	CMyComPtr<ISequentialOutStream> pOutStream = new CStringReferenceOutStream(a_sUncompressedData);
 
 	NCompress::NLZMA::CDecoder* pDecoderSpec = new NCompress::NLZMA::CDecoder;
-	CMyComPtr<ICompressCoder> decoder = pDecoderSpec;
+	CMyComPtr<ICompressCoder> pDecoder = pDecoderSpec;
 	const UInt32 kPropertiesSize = 5;
 	Byte uProperties[kPropertiesSize];
 	UInt32 uProcessedSize = 0;
@@ -269,7 +269,7 @@ bool CLzma457::Uncompress(const std::string& a_sCompressedData, std::string& a_s
 		}
 		uFileSize |= static_cast<UInt64>(b) << (8 * i);
 	}
-	if (decoder->Code(pInStream, pOutStream, 0, &uFileSize, 0) != S_OK)
+	if (pDecoder->Code(pInStream, pOutStream, 0, &uFileSize, 0) != S_OK)
 	{
 		return false;
 	}

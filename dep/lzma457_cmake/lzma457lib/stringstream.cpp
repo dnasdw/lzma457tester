@@ -40,9 +40,9 @@ CStringReferenceOutStream::~CStringReferenceOutStream()
 STDMETHODIMP CStringReferenceOutStream::Write(const void* a_pData, UInt32 a_uSize, UInt32* a_pProcessedSize)
 {
 	m_sString.append(reinterpret_cast<const char*>(a_pData), a_uSize);
-	std::string::size_type newSize = m_sString.size();
-	a_uSize = static_cast<unsigned int>(newSize - m_uSize);
-	m_uSize = newSize;
+	std::string::size_type uNewSize = m_sString.size();
+	a_uSize = static_cast<unsigned int>(uNewSize - m_uSize);
+	m_uSize = uNewSize;
 	if (a_pProcessedSize != nullptr)
 	{
 		*a_pProcessedSize = a_uSize;
