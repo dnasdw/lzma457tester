@@ -56,6 +56,11 @@ set(sdw_lzma457_src
   "${CMAKE_CURRENT_SOURCE_DIR}/lzma457/CPP/Common/StdAfx.h"
   "${CMAKE_CURRENT_SOURCE_DIR}/lzma457/CPP/Common/Types.h"
 
+  "${CMAKE_CURRENT_SOURCE_DIR}/lzma457lib/lzma457lib.cpp"
+  "${CMAKE_CURRENT_SOURCE_DIR}/lzma457lib/lzma457lib.h"
+  "${CMAKE_CURRENT_SOURCE_DIR}/lzma457lib/stringstream.cpp"
+  "${CMAKE_CURRENT_SOURCE_DIR}/lzma457lib/stringstream.h"
+
   "${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt"
 
   PARENT_SCOPE
