@@ -7,7 +7,7 @@ AUTO_FILES("${ROOT_SOURCE_DIR}/dep/lzma457/CPP/7zip/Common" "src" "/(InBuffer|Ou
 AUTO_FILES("${ROOT_SOURCE_DIR}/dep/lzma457/CPP/7zip/Compress/LZ" "src" "\\.(cpp|h)$")
 AUTO_FILES("${ROOT_SOURCE_DIR}/dep/lzma457/CPP/7zip/Compress/LZMA" "src" "(LZMA|LZMADecoder|LZMAEncoder|StdAfx)\\.(cpp|h)$")
 AUTO_FILES("${ROOT_SOURCE_DIR}/dep/lzma457/CPP/7zip/Compress/RangeCoder" "src" "\\.(cpp|h)$")
-AUTO_FILES("${ROOT_SOURCE_DIR}/dep/lzma457/CPP/Common" "src" "/(CRC|Defs|MyCom|MyGuidDef|MyException|MyInitGuid|MyUnknown|MyWindows|NewHandler|StdAfx|Types)\\.(cpp|h)$")
+AUTO_FILES("${ROOT_SOURCE_DIR}/dep/lzma457/CPP/Common" "src" "/(CRC|Defs|MyCom|MyException|MyGuidDef|MyInitGuid|MyUnknown|MyWindows|NewHandler|StdAfx|Types)\\.(cpp|h)$")
 include_directories(${DEP_INCLUDE_DIR})
 link_directories(${DEP_LIBRARY_DIR})
 add_definitions(-DSDW_MAIN -Wno-logical-op-parentheses)
