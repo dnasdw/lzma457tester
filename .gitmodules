@@ -4,3 +4,6 @@
 [submodule "dep/libsundaowen"]
 	path = dep/libsundaowen
 	url = https://github.com/dnasdw/libsundaowen_src.git
+[submodule "dep/lzma457lib"]
+	path = dep/lzma457lib
+	url = https://github.com/dnasdw/libsundaowen_lzma457lib_src.git
