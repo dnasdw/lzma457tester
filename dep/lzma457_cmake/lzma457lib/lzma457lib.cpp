@@ -28,7 +28,7 @@ void CLzma457::SProperties::InitDefault()
 
 void CLzma457::SProperties::Normalize()
 {
-	if (A != 0/* && A != 1*/)
+	if (A < 0 || A > 1)
 	{
 		A = -1;	// 1
 	}

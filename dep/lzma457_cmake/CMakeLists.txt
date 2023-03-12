@@ -1,6 +1,6 @@
-set(sdw_lzma457_add_definitions_UNIX_OR_MINGW "-Wno-logical-op-parentheses" PARENT_SCOPE)
+set(sdw_lzma457lib_add_definitions_UNIX_OR_MINGW "-Wno-logical-op-parentheses" PARENT_SCOPE)
 
-set(sdw_lzma457_src
+set(sdw_lzma457lib_src
   "${CMAKE_CURRENT_SOURCE_DIR}/lzma457/C/7zCrc.c"
   "${CMAKE_CURRENT_SOURCE_DIR}/lzma457/C/7zCrc.h"
   "${CMAKE_CURRENT_SOURCE_DIR}/lzma457/C/Alloc.c"
